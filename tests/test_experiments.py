@@ -2,10 +2,10 @@ import json
 from pathlib import Path
 import numpy as np
 import pytest
-from tree_ensemble_benchmark.experiments import run
-from tree_ensemble_benchmark.models import frozen_config, build_model
-from tree_ensemble_benchmark.evaluation import node_count
-from tree_ensemble_benchmark.reporting import historical_summary
+from src.experiments import run
+from src.models import frozen_config, build_model
+from src.evaluation import node_count
+from src.reporting import historical_summary
 
 
 def test_quick_runs_reproduce_metrics_and_protect_output(tmp_path):
@@ -29,11 +29,11 @@ def test_quick_runs_reproduce_metrics_and_protect_output(tmp_path):
 
 def test_full_campaign_orchestration_with_synthetic_data(monkeypatch, tmp_path):
     # Exercise the full branch without downloads or the costly historical estimators.
-    from tree_ensemble_benchmark import experiments as ex
-    from tree_ensemble_benchmark.data import quick_data
+    from src import experiments as ex
+    from src.data import quick_data
 
     cfg = frozen_config()
-    from tree_ensemble_benchmark.data import data_digest
+    from src.data import data_digest
 
     cfg["expected_development_sha256"] = {
         t: data_digest(quick_data(t)) for t in ["classification", "regression"]
@@ -59,7 +59,7 @@ def test_full_campaign_orchestration_with_synthetic_data(monkeypatch, tmp_path):
 
 
 def test_all_frozen_models_construct_and_fit_small_data():
-    from tree_ensemble_benchmark.data import quick_data
+    from src.data import quick_data
     from threadpoolctl import threadpool_limits
 
     config = frozen_config()

@@ -1,8 +1,0 @@
-14a3034 2026-10-23 Enzo Picarel feat: implement NumPy CART classifier
-482527a 2026-10-21 Enzo Picarel feat: add repeated test comparisons
-c2ace6b 2026-10-21 Enzo Picarel feat: add voting and stacking experiments
-32eaf0d 2026-10-20 Enzo Picarel feat: add boosting experiments
-437e9ae 2026-10-20 Enzo Picarel feat: add random forest and extra trees experiments
-b8ef3fe 2026-10-20 Enzo Picarel feat: add sampling ensemble experiments
-1593ce3 2026-10-20 Enzo Picarel feat: add CART tree experiments
-f2225a1 2026-10-20 Enzo Picarel Initial commit

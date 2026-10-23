@@ -1,115 +1,117 @@
-# Tree Ensemble Benchmark
+<div align="center">
+  <h3>Tree Ensemble Benchmark</h3>
+  <p>
+    Decision trees and ensemble learning with <strong>NumPy CART</strong>,
+    <strong>out-of-fold stacking</strong>, and accuracy–cost comparisons.
+    <br />
+    <a href="#-getting-started"><strong>Quick Start »</strong></a>
+  </p>
+  <p>
+    <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white">
+    <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat&amp;logo=numpy&amp;logoColor=white">
+    <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&amp;logo=scikitlearn&amp;logoColor=white">
+    <img alt="pytest" src="https://img.shields.io/badge/pytest-0A9EDC?style=flat&amp;logo=pytest&amp;logoColor=white">
+  </p>
+</div>
 
-How much predictive improvement justifies a more expensive model? This project
-compares tree ensembles across classification and regression, implements CART in
-NumPy, and makes out-of-fold stacking and evaluation costs inspectable.
+## 🔍 About The Project
 
-The historical housing study found only a **0.29% reduction in RMSE** from stacking
-compared with gradient boosting, alongside roughly **13× fitting cost and 16× inference
-cost**. These are recorded machine-specific timings, not universal complexity ratios.
+This project compares tree-based models on **Fashion-MNIST classification** and
+**California Housing regression**. It includes a CART classifier implemented from
+scratch in NumPy and benchmarks scikit-learn ensembles, from bagging and random
+forests to gradient boosting and stacking.
 
-This is a reorganized portfolio edition of university coursework. Historical results
-are preserved separately from new verification runs. It is an experimental benchmark;
-no deployment or exclusive authorship of all source components is claimed.
-See [provenance](docs/provenance.md) and the [publication gate](docs/publication-audit.md).
+The main finding: a small improvement in prediction quality can come at a much
+higher computational cost. On the recorded Housing benchmark, stacking reduced
+RMSE by **0.29%** compared with gradient boosting, with approximately **13× fitting
+cost and 16× prediction cost**.
 
-## Engineering contributions
+## 🛠 Built With
 
-- **NumPy CART:** sorted-feature split search, Gini/entropy, depth/leaf constraints,
-  probability prediction and explicit edge-case tests. Library ensembles use scikit-learn.
-- **OOF stacking:** five training-only folds, exactly-once prediction assignments,
-  class-probability validation, fixed configurations and training-only final refits.
-- **Evaluation:** classification/regression, repeated estimator seeds, fitting time,
-  prediction latency and structural model size. Quick runs require no downloads.
+- **Language:** Python 3.11+
+- **Algorithms:** NumPy CART, scikit-learn tree ensembles
+- **Testing:** pytest
 
-## Selected historical results
+## 📐 Architecture
 
-| Task | Model | Recorded mean test result |
+- **CART from scratch:** Gini/entropy splitting, sorted-feature searches,
+  depth/leaf constraints and class probabilities.
+- **Ensemble comparison:** bagging, random forests, Extra Trees, AdaBoost,
+  gradient boosting, voting and stacking.
+- **Out-of-fold stacking:** five training-only folds with checks for missing,
+  duplicate or overlapping prediction assignments.
+- **Evaluation:** fixed train/validation/test splits, five estimator seeds,
+  predictive metrics, fitting time, prediction latency and tree node counts.
+
+```text
+├── main.py                 # Run experiments
+├── src/                    # CART, ensembles, data and evaluation
+├── tests/                  # Correctness and isolation checks
+├── results/                # Historical and separately reproduced results
+├── figures/                # Accuracy–cost comparison
+├── requirements.txt
+├── EXPERIMENTS.md           # Methodology, data sources and limitations
+└── VALIDATION.md            # Verification notes
+```
+
+## 🚀 Getting Started
+
+Python 3.12 is recommended. No GPU is required.
+
+```sh
+git clone https://github.com/EnzoPicarel/tree-ensemble-benchmark.git
+cd tree-ensemble-benchmark
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python main.py quick --output runs/quick
+```
+
+The quick experiment uses small generated datasets and requires no downloads.
+Choose a new output directory when running it again.
+
+## ⚡ Execution
+
+```sh
+# Compare NumPy CART with scikit-learn on 90 synthetic configurations.
+python main.py cart --output runs/cart
+
+# Check historical results and regenerate the figure.
+python main.py report --output runs/report
+
+# Run the expensive full benchmark; downloads the public datasets.
+python main.py full --download --output runs/full
+```
+
+See [EXPERIMENTS.md](EXPERIMENTS.md) for model configurations, dataset sources,
+splits, output files and evaluation limitations.
+
+## 📊 Results
+
+| Dataset | Model | Recorded mean test result |
 |---|---|---:|
 | Fashion-MNIST | OOF stacking | 86.62% accuracy ± 0.0925 percentage points |
 | California Housing | Gradient boosting | 0.47249 RMSE |
 | California Housing | OOF stacking | 0.47110 RMSE |
 
-Five estimator seeds share fixed partitions; ± is sample SD, not a confidence
-interval. Housing targets use $100,000 units. Full-data models are scikit-learn
-estimators. The separate custom-CART study records 90 synthetic configurations,
-97.5–100% held-out prediction agreement with sklearn, and 12 exact fixtures.
-Prediction agreement does not mean identical implementations.
+These are historical results across five estimator seeds on fixed partitions.
+The SD does not measure variability across independent datasets. Housing RMSE
+uses units of $100,000. The complete five-seed campaign has not been rerun;
+the separate Housing seed-42 and 90-configuration CART reruns match the recorded
+metrics. See [VALIDATION.md](VALIDATION.md).
 
-The CSV aggregates were independently recalculated during extraction; original
-five-seed full-data campaign was **not rerun**. A new Housing seed-42 replay matches
-all 13 methods' historical error and node-count values; the separate 90-configuration
-synthetic CART comparison also matches. See [verification](docs/verification.md). Historical artifacts have a
-[SHA-256 manifest](results/historical/artifact_manifest.json).
+![Housing accuracy–cost comparison](figures/housing_tradeoff.svg)
 
-![Historical housing accuracy-cost trade-off](figures/housing_tradeoff.svg)
+The timing ratios are machine-specific. Gradient boosting remains a simpler option
+when the small RMSE improvement does not justify stacking's additional cost.
 
-Stacking is not an unconditional recommendation: gradient boosting is a compelling
-simpler choice for housing given the small error difference. Timing sums include
-OOF training for stacking. Node counts are structural size proxies, not memory bytes.
-See [measurement definitions and limitations](docs/methodology.md) and the
-[interview preparation notes](docs/interview-guide.md).
-
-## Installation and quick verification
-
-Python 3.12 is recommended; Python 3.11+ is supported.
+## 🧪 Tests
 
 ```sh
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install -e '.[dev]'
-python -m pytest
-python -m tree_ensemble_benchmark.cli quick --output runs/quick
+pip install -r requirements-dev.txt
+python -m pytest tests -q
 ```
 
-Quick mode generates small synthetic classification/regression data, runs limited
-sampling/forest/boosting/voting/stacking comparisons and exercises CART. It writes
-metrics, OOF records, split indices and environment metadata. It is not a substitute
-for the full-data benchmark. Choose a fresh output directory for each run.
+## 👥 Author
 
-```sh
-# Re-run the 90-configuration synthetic CART comparison.
-python -m tree_ensemble_benchmark.cli cart --output runs/cart
-# Verify historical aggregates and regenerate the figure.
-python -m tree_ensemble_benchmark.cli report --output runs/report
-# Explicit expensive replay: public dataset downloads, both tasks, five seeds.
-python -m tree_ensemble_benchmark.cli full --download --output runs/full
-```
-
-The full command replays the frozen final comparison, not every exploratory notebook
-sweep. It preserves 10,000/5,000/10,000 Fashion-MNIST and 60/20/20 Housing partitions;
-validation never joins the training or OOF rows. Detailed environment, data, output
-and compute instructions are in [reproduction](docs/reproduction.md).
-
-## Implementation map
-
-```text
-src/tree_ensemble_benchmark/
-  cart.py            NumPy CART implementation
-  data.py            Public dataset loaders and disjoint splits
-  stacking.py        OOF features and training-only stack fitting
-  models.py          Allowlisted frozen and quick model construction
-  configs/frozen.json Explicit historical model configurations
-  evaluation.py      Metrics, timings and artifact output
-  experiments.py     Quick/full campaign orchestration
-  cart_study.py      Separate synthetic CART comparison
-  reporting.py       Historical consistency checks and SVG figure
-  cli.py             Explicit command-line entrypoints
-tests/               Inexpensive correctness and isolation tests
-results/historical/  Preserved aggregate results and source hashes
-figures/             Regenerated presentation artifacts
-docs/                Methodology, reproduction, provenance and publication review
-```
-
-## Limits and attribution
-
-Extensive validation reuse can bias selection. The historical pruning grid was derived
-before CV and is not a nested estimate. Fixed-seed SD does not measure new-dataset
-uncertainty. Random housing partitions do not test unseen regions or future years.
-No corrected pruning score or production capability is inferred from the old results.
-
-Foundation: Enzo Picarel's University of Cincinnati ML coursework. Dataset authors:
-Xiao, Rasul and Vollgraf / Zalando (Fashion-MNIST); Pace and Barry / 1990 census
-(California Housing). See [sources and licensing review](docs/datasets.md).
-Publication and project licensing remain blocked pending course/starter-code ownership
-and dataset-use confirmation. No course materials or datasets are distributed.
+- **Enzo Picarel**

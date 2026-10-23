@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 from sklearn.tree import DecisionTreeClassifier
-from tree_ensemble_benchmark.cart import NumpyCART
+from src.cart import NumpyCART
 
 FIXTURES = [
     (np.column_stack([np.arange(6), np.zeros(6)]), np.array(["a"] * 3 + ["b"] * 3), 1, 1),

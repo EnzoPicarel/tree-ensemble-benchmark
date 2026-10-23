@@ -4,7 +4,7 @@ import pytest
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 from sklearn.model_selection import StratifiedKFold, KFold
-from tree_ensemble_benchmark.stacking import (
+from src.stacking import (
     oof_features,
     fit_stack,
     validate_folds,
@@ -57,7 +57,7 @@ def test_oof_rows_never_seen_by_fold_estimator():
 
 
 def test_external_partitions_never_enter_meta_training(monkeypatch):
-    from tree_ensemble_benchmark import stacking as module
+    from src import stacking as module
     from sklearn.linear_model import LogisticRegression
 
     fits = []

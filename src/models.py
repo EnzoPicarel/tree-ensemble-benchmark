@@ -29,7 +29,7 @@ REGISTRY = {
 
 
 def frozen_config():
-    return json.loads(files("tree_ensemble_benchmark").joinpath("configs/frozen.json").read_text())
+    return json.loads(files("src").joinpath("configs/frozen.json").read_text())
 
 
 def build_model(spec: dict, seed: int):

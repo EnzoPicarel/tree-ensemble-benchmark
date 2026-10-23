@@ -2,14 +2,13 @@
 .audit/
 __pycache__/
 *.py[cod]
-*.egg-info/
 .pytest_cache/
 .ruff_cache/
 build/
 dist/
+*.egg-info/
 data/
 runs/
 .env
 .env.*
-!.env.example
 .ipynb_checkpoints/

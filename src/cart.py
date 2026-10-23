@@ -1,4 +1,4 @@
-"""NumPy CART extracted from the academic implementation; see docs/provenance.md."""
+"""NumPy CART extracted from the academic implementation; see EXPERIMENTS.md."""
 
 import numpy as np
 

@@ -1,7 +1,7 @@
 import gzip
 import numpy as np
 import pytest
-from tree_ensemble_benchmark.data import (
+from src.data import (
     check_indices,
     fashion_indices,
     quick_data,
