@@ -1,0 +1,6 @@
+{
+  "synthetic": true,
+  "nodes": 25,
+  "accuracy_pct": 47.91666666666667,
+  "macro_f1": 0.442214790040877
+}

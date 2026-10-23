@@ -1,0 +1,21 @@
+task,seed,method,fold,training_rows,heldout_rows,fit_seconds
+regression,42,Tree (absolute_error),0,9907,2477,0.32580913900028463
+regression,42,Tree (absolute_error),1,9907,2477,0.31317826899976353
+regression,42,Tree (absolute_error),2,9907,2477,0.3133468190003441
+regression,42,Tree (absolute_error),3,9907,2477,0.31790845299974535
+regression,42,Tree (absolute_error),4,9908,2476,0.30702142000018284
+regression,42,Random forest,0,9907,2477,9.267333850999876
+regression,42,Random forest,1,9907,2477,9.081091337000089
+regression,42,Random forest,2,9907,2477,9.186808710999685
+regression,42,Random forest,3,9907,2477,9.289880835000076
+regression,42,Random forest,4,9908,2476,9.09107057500023
+regression,42,AdaBoost.R2,0,9907,2477,11.007386275000044
+regression,42,AdaBoost.R2,1,9907,2477,11.193986124000276
+regression,42,AdaBoost.R2,2,9907,2477,11.126852515999872
+regression,42,AdaBoost.R2,3,9907,2477,11.226494621000256
+regression,42,AdaBoost.R2,4,9908,2476,11.431170537000071
+regression,42,Gradient boosting,0,9907,2477,12.289168290999896
+regression,42,Gradient boosting,1,9907,2477,12.311663273999784
+regression,42,Gradient boosting,2,9907,2477,12.281211750000239
+regression,42,Gradient boosting,3,9907,2477,12.131382858000052
+regression,42,Gradient boosting,4,9908,2476,12.14879117999999

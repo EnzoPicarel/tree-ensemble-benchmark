@@ -1,0 +1,131 @@
+task,method,seed,accuracy_pct,rmse
+classification,Tree (gini),42,77.46,
+classification,Tree (entropy),42,77.60000000000001,
+classification,Pasting,42,85.0,
+classification,Bagging,42,85.42,
+classification,Random subspaces,42,86.5,
+classification,Random patches,42,85.61999999999999,
+classification,Random forest,42,86.11999999999999,
+classification,Extra trees,42,86.48,
+classification,AdaBoost,42,87.2,
+classification,Gradient boosting,42,87.36,
+classification,Hard voting,42,87.06,
+classification,Soft voting,42,86.46000000000001,
+classification,Stacking,42,87.74,
+classification,Tree (gini),123,77.4,
+classification,Tree (entropy),123,77.56,
+classification,Pasting,123,84.84,
+classification,Bagging,123,85.1,
+classification,Random subspaces,123,86.4,
+classification,Random patches,123,85.7,
+classification,Random forest,123,86.33999999999999,
+classification,Extra trees,123,86.38,
+classification,AdaBoost,123,87.2,
+classification,Gradient boosting,123,87.36,
+classification,Hard voting,123,87.16000000000001,
+classification,Soft voting,123,86.3,
+classification,Stacking,123,87.83999999999999,
+classification,Tree (gini),2026,77.4,
+classification,Tree (entropy),2026,77.36,
+classification,Pasting,2026,84.84,
+classification,Bagging,2026,85.08,
+classification,Random subspaces,2026,86.06,
+classification,Random patches,2026,85.74000000000001,
+classification,Random forest,2026,86.16,
+classification,Extra trees,2026,86.28,
+classification,AdaBoost,2026,87.24,
+classification,Gradient boosting,2026,87.36,
+classification,Hard voting,2026,87.12,
+classification,Soft voting,2026,86.4,
+classification,Stacking,2026,87.66000000000001,
+classification,Tree (gini),7,77.56,
+classification,Tree (entropy),7,77.56,
+classification,Pasting,7,84.6,
+classification,Bagging,7,84.98,
+classification,Random subspaces,7,86.24000000000001,
+classification,Random patches,7,85.5,
+classification,Random forest,7,86.33999999999999,
+classification,Extra trees,7,86.66,
+classification,AdaBoost,7,86.96000000000001,
+classification,Gradient boosting,7,87.36,
+classification,Hard voting,7,86.92,
+classification,Soft voting,7,86.48,
+classification,Stacking,7,87.68,
+classification,Tree (gini),99,77.3,
+classification,Tree (entropy),99,77.52,
+classification,Pasting,99,85.04,
+classification,Bagging,99,84.8,
+classification,Random subspaces,99,86.3,
+classification,Random patches,99,85.72,
+classification,Random forest,99,86.38,
+classification,Extra trees,99,86.33999999999999,
+classification,AdaBoost,99,87.1,
+classification,Gradient boosting,99,87.36,
+classification,Hard voting,99,87.03999999999999,
+classification,Soft voting,99,86.52,
+classification,Stacking,99,87.8,
+regression,Tree (squared_error),42,,0.663969560523736
+regression,Tree (absolute_error),42,,0.654964911740444
+regression,Tree (friedman_mse),42,,0.663969560523736
+regression,Pasting,42,,0.5168836322367073
+regression,Bagging,42,,0.5170026398461581
+regression,Random subspaces,42,,0.5129218914179678
+regression,Random patches,42,,0.5109765516504882
+regression,Random forest,42,,0.49517062456988165
+regression,Extra trees,42,,0.49318448586996594
+regression,AdaBoost.R2,42,,0.6474928352084723
+regression,Gradient boosting,42,,0.4708928833563051
+regression,Averaging,42,,0.5099566655130433
+regression,Stacking,42,,0.4661260265467415
+regression,Tree (squared_error),123,,0.6624217854446868
+regression,Tree (absolute_error),123,,0.6574917222234213
+regression,Tree (friedman_mse),123,,0.6624217854446868
+regression,Pasting,123,,0.5173593896703453
+regression,Bagging,123,,0.5146995913382262
+regression,Random subspaces,123,,0.5080152517258221
+regression,Random patches,123,,0.5104531303530897
+regression,Random forest,123,,0.4981222427703791
+regression,Extra trees,123,,0.495252724347161
+regression,AdaBoost.R2,123,,0.65134968460097
+regression,Gradient boosting,123,,0.4708680644973031
+regression,Averaging,123,,0.5119406607099272
+regression,Stacking,123,,0.46651075485979904
+regression,Tree (squared_error),2026,,0.6633523790603975
+regression,Tree (absolute_error),2026,,0.6549341464196525
+regression,Tree (friedman_mse),2026,,0.6633523790603975
+regression,Pasting,2026,,0.5210104717491665
+regression,Bagging,2026,,0.5167272054969672
+regression,Random subspaces,2026,,0.5131710734629136
+regression,Random patches,2026,,0.5119677697905347
+regression,Random forest,2026,,0.4969796204865403
+regression,Extra trees,2026,,0.4942574987895309
+regression,AdaBoost.R2,2026,,0.6480670833800259
+regression,Gradient boosting,2026,,0.47154079964860024
+regression,Averaging,2026,,0.510259077297855
+regression,Stacking,2026,,0.46726406628467865
+regression,Tree (squared_error),7,,0.6576730980953422
+regression,Tree (absolute_error),7,,0.6570537347394084
+regression,Tree (friedman_mse),7,,0.6576730980953422
+regression,Pasting,7,,0.5181549958110678
+regression,Bagging,7,,0.5142487089310466
+regression,Random subspaces,7,,0.5029494705575954
+regression,Random patches,7,,0.5048556988832323
+regression,Random forest,7,,0.4992315954920412
+regression,Extra trees,7,,0.4957266658913078
+regression,AdaBoost.R2,7,,0.6456306677099735
+regression,Gradient boosting,7,,0.4714637449702056
+regression,Averaging,7,,0.5110790913881436
+regression,Stacking,7,,0.46761773183024213
+regression,Tree (squared_error),99,,0.6629707867164507
+regression,Tree (absolute_error),99,,0.6574298726515452
+regression,Tree (friedman_mse),99,,0.6629707867164507
+regression,Pasting,99,,0.5160684979280167
+regression,Bagging,99,,0.5148677394510335
+regression,Random subspaces,99,,0.5159357899537396
+regression,Random patches,99,,0.5134844947316874
+regression,Random forest,99,,0.4972721343246948
+regression,Extra trees,99,,0.49234270237231065
+regression,AdaBoost.R2,99,,0.6485762200560579
+regression,Gradient boosting,99,,0.47074138589539266
+regression,Averaging,99,,0.5106538121691406
+regression,Stacking,99,,0.46638478247936616

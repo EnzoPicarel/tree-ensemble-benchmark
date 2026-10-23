@@ -1,0 +1,82 @@
+{
+  "mode": "quick",
+  "status": "complete",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "seeds": [
+    42
+  ],
+  "tasks": [
+    "classification",
+    "regression"
+  ],
+  "fold_seed": 42,
+  "folds": 5,
+  "threads": 1,
+  "synthetic": true,
+  "data": {
+    "classification": {
+      "development_sha256": "5ec280e66e4dcabc0f83ad796387fa9592cb22ce3300f7a32123f6dab0366281",
+      "test_sha256": "8eda943556fb722a262f2dd0f175d69b673c7733a43dd2d83ee9c19c6e280136",
+      "rows": {
+        "train": 144,
+        "validation": 48,
+        "test": 48
+      }
+    },
+    "regression": {
+      "development_sha256": "c9bd275d3cb03c1bca7105b77689d4c06332ae5485415468b32a0035bf7a2d25",
+      "test_sha256": "0938612b345e706c81c15e762f63f1f6676451175ffc1f73678908c608ac1c64",
+      "rows": {
+        "train": 144,
+        "validation": 48,
+        "test": 48
+      }
+    }
+  },
+  "model_settings": {
+    "classification/42": {
+      "Tree": "DecisionTreeClassifier(max_depth=4, random_state=42)",
+      "Pasting": "BaggingClassifier(bootstrap=False,\n                  estimator=DecisionTreeClassifier(max_depth=4),\n                  max_samples=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Bagging": "BaggingClassifier(estimator=DecisionTreeClassifier(max_depth=4),\n                  max_samples=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Random subspaces": "BaggingClassifier(bootstrap=False,\n                  estimator=DecisionTreeClassifier(max_depth=4),\n                  max_features=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Random patches": "BaggingClassifier(estimator=DecisionTreeClassifier(max_depth=4),\n                  max_features=0.7, max_samples=0.7, n_estimators=8, n_jobs=1,\n                  random_state=42)",
+      "Random forest": "RandomForestClassifier(max_depth=5, n_estimators=12, n_jobs=1, random_state=42)",
+      "Extra trees": "ExtraTreesClassifier(max_depth=5, n_estimators=12, n_jobs=1, random_state=42)",
+      "AdaBoost": "AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=2),\n                   n_estimators=12, random_state=42)",
+      "Gradient boosting": "HistGradientBoostingClassifier(early_stopping=False, max_depth=3, max_iter=12,\n                               random_state=42)"
+    },
+    "regression/42": {
+      "Tree": "DecisionTreeRegressor(max_depth=4, random_state=42)",
+      "Pasting": "BaggingRegressor(bootstrap=False, estimator=DecisionTreeRegressor(max_depth=4),\n                 max_samples=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Bagging": "BaggingRegressor(estimator=DecisionTreeRegressor(max_depth=4), max_samples=0.7,\n                 n_estimators=8, n_jobs=1, random_state=42)",
+      "Random subspaces": "BaggingRegressor(bootstrap=False, estimator=DecisionTreeRegressor(max_depth=4),\n                 max_features=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Random patches": "BaggingRegressor(estimator=DecisionTreeRegressor(max_depth=4), max_features=0.7,\n                 max_samples=0.7, n_estimators=8, n_jobs=1, random_state=42)",
+      "Random forest": "RandomForestRegressor(max_depth=5, n_estimators=12, n_jobs=1, random_state=42)",
+      "Extra trees": "ExtraTreesRegressor(max_depth=5, n_estimators=12, n_jobs=1, random_state=42)",
+      "AdaBoost": "AdaBoostRegressor(estimator=DecisionTreeRegressor(max_depth=2), n_estimators=12,\n                  random_state=42)",
+      "Gradient boosting": "GradientBoostingRegressor(n_estimators=12, random_state=42)"
+    }
+  },
+  "timing": "Sequential single-thread fits; prediction includes feature validation; combination latency is additive.",
+  "source_sha256": {
+    "data.py": "4a460f92ef09d91f6b0e9d7344b7147a2cee4192f7ee3bde6c05d21ebbfe2b5a",
+    "__init__.py": "d89a90492ce594633cc3667ed32cc3f93049b17932cd45e8252966cfbe544232",
+    "stacking.py": "cf35b5fda4dc34da0d855eda4214bed4201a2e6a2055e836ebbc807e7558fa49",
+    "cart_study.py": "de067ef84ce1bf10234e880ca724aa557c610bb1a5b3b2c7ab37511a69f6f046",
+    "evaluation.py": "fa79be1654dedbf364f94fddaef0a45270c0013d34ae8c20ae8acc7989e66d3b",
+    "cart.py": "aa4770465a31ef37270e41e77630db07ec3f4cb80e93b5d64f7a695c9b85cc7b",
+    "cli.py": "6aba690721ba4fcdca85e1c4d97c00c06d7c6eb5fd8d08fd6fc3db621e04282a",
+    "experiments.py": "aac07b866acdd1f993428a30d57b4a92af2a7101c5875ecedfed0fcd641afb7b",
+    "models.py": "67917359520098c6c2485bc2bea2fd55bd40a6ba3bc9a163261fc57bf1d5f1db",
+    "reporting.py": "9a4e5c36ac6b0fd9018a3ba245e45561ac11d34ab6871da01bcbedb26250987f"
+  },
+  "frozen_config_sha256": "b6d7287463db1300964018c74888cf70c74ac824a717bbc6163f28e17e061d99"
+}

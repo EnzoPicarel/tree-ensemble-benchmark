@@ -1,0 +1,11 @@
+include README.md
+recursive-include docs *.md *.txt
+recursive-include results/historical *.csv *.json
+recursive-include results/verification *.csv *.json
+recursive-include figures *.svg *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+prune .audit
+prune .venv
+prune runs
+prune data

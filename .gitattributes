@@ -1,0 +1,4 @@
+# Preserve historical evidence byte-for-byte on every platform.
+results/historical/* -text
+# Python's CSV dialect emits CRLF; treat its record terminators correctly.
+*.csv whitespace=cr-at-eol

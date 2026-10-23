@@ -1,0 +1,93 @@
+method,configuration,rmse,mae
+Pasting,"{""depth"": null, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.1}",0.565864454160325,0.3927550764292637
+Pasting,"{""depth"": null, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.3}",0.5327077196625987,0.3585283619912793
+Pasting,"{""depth"": null, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.5}",0.5193094897102941,0.3441244831153103
+Pasting,"{""depth"": null, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.7}",0.5168836322367073,0.34154562347383743
+Pasting,"{""depth"": null, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 1.0}",0.7027644277165065,0.45300583900193797
+Bagging,"{""depth"": null, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.1}",0.5735049661885109,0.3976809898740311
+Bagging,"{""depth"": null, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.3}",0.5394516038365967,0.3643639583333335
+Bagging,"{""depth"": null, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.5}",0.5239231286048379,0.3489772977228684
+Bagging,"{""depth"": null, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.7}",0.5219755095178155,0.34667554026162806
+Bagging,"{""depth"": null, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 1.0}",0.5170026398461581,0.3415536169815893
+Random subspaces,"{""depth"": null, ""family"": ""Random subspaces"", ""features"": 0.1, ""rows"": 1.0}",1.0010210049165766,0.7833668207025984
+Random subspaces,"{""depth"": null, ""family"": ""Random subspaces"", ""features"": 0.3, ""rows"": 1.0}",0.8226057321434581,0.6353729310510872
+Random subspaces,"{""depth"": null, ""family"": ""Random subspaces"", ""features"": 0.5, ""rows"": 1.0}",0.5592057995520368,0.4057562951792637
+Random subspaces,"{""depth"": null, ""family"": ""Random subspaces"", ""features"": 0.7, ""rows"": 1.0}",0.5129218914179678,0.3573418412306203
+Random subspaces,"{""depth"": null, ""family"": ""Random subspaces"", ""features"": 1.0, ""rows"": 1.0}",0.7027644277165065,0.45300583900193797
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.1}",0.9542064556123324,0.7435574495066658
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.1}",0.81469509067902,0.6285906394662467
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.1}",0.6108666247184585,0.4512877038275195
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.1}",0.5663576079247921,0.4079431702034885
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.1}",0.5735049661885109,0.3976809898740311
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.3}",0.9586672273625018,0.7481311079535777
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.3}",0.8106582692355978,0.6282277193509596
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.3}",0.5800771723386134,0.4253181173449614
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.3}",0.5308149372506865,0.37633674602713196
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.3}",0.5394516038365967,0.3643639583333335
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.5}",0.9666062658478818,0.754558930616891
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.5}",0.8107012126956368,0.6250337305518398
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.5}",0.5698628877494261,0.41607260331879864
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.5}",0.5196945652088535,0.3674865581879847
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.5}",0.5239231286048379,0.3489772977228684
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.7}",0.9707893015991518,0.7589581253119237
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.7}",0.8064735608949097,0.6232563597317583
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.7}",0.5644105172479814,0.4113834752180234
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.7}",0.5142992554307125,0.3618427881056203
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.7}",0.5219755095178155,0.34667554026162806
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 1.0}",0.9767566500953223,0.7641668338721976
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 1.0}",0.8063592999646721,0.6226137837309677
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 1.0}",0.561511360654894,0.41027860186531023
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 1.0}",0.5109765516504882,0.3590813687015506
+Random patches,"{""depth"": null, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 1.0}",0.5170026398461581,0.3415536169815893
+Pasting,"{""depth"": 4, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.1}",0.6964471771782051,0.5169606193419691
+Pasting,"{""depth"": 4, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.3}",0.7144668167958702,0.529151199881682
+Pasting,"{""depth"": 4, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.5}",0.724232487471047,0.5348099058019555
+Pasting,"{""depth"": 4, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 0.7}",0.7319601077888673,0.5400692700247607
+Pasting,"{""depth"": 4, ""family"": ""Pasting"", ""features"": 1.0, ""rows"": 1.0}",0.7719223986484386,0.5698032293244084
+Bagging,"{""depth"": 4, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.1}",0.6994607187980817,0.5169864851801997
+Bagging,"{""depth"": 4, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.3}",0.7096769186947092,0.5245553593478911
+Bagging,"{""depth"": 4, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.5}",0.7176618259321205,0.5296719147482999
+Bagging,"{""depth"": 4, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 0.7}",0.7221606803746234,0.5325180389793598
+Bagging,"{""depth"": 4, ""family"": ""Bagging"", ""features"": 1.0, ""rows"": 1.0}",0.7254224289627814,0.5349188400705351
+Random subspaces,"{""depth"": 4, ""family"": ""Random subspaces"", ""features"": 0.1, ""rows"": 1.0}",0.9648441076367575,0.7549181676081845
+Random subspaces,"{""depth"": 4, ""family"": ""Random subspaces"", ""features"": 0.3, ""rows"": 1.0}",0.8678623905886771,0.6725598377553721
+Random subspaces,"{""depth"": 4, ""family"": ""Random subspaces"", ""features"": 0.5, ""rows"": 1.0}",0.7480005208349986,0.56751466464951
+Random subspaces,"{""depth"": 4, ""family"": ""Random subspaces"", ""features"": 0.7, ""rows"": 1.0}",0.730222881661559,0.5517655443945619
+Random subspaces,"{""depth"": 4, ""family"": ""Random subspaces"", ""features"": 1.0, ""rows"": 1.0}",0.7719223986484386,0.5698032293244084
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.1}",0.9630011991671453,0.7522581193508301
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.1}",0.8684464888356923,0.6721791347358634
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.1}",0.7442433527969532,0.5645658168422077
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.1}",0.7174586278961549,0.541653738031541
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.1}",0.6994607187980817,0.5169864851801997
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.3}",0.9636179242347249,0.753087057779349
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.3}",0.86586123269541,0.6712119947848824
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.3}",0.7442066603352602,0.5656270635421707
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.3}",0.7179032503295745,0.5428406661029456
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.3}",0.7096769186947092,0.5245553593478911
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.5}",0.9640468976611103,0.7534048317119252
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.5}",0.8675954089022911,0.6722305019594896
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.5}",0.7472465432009976,0.5674396984930662
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.5}",0.7202948079812329,0.545070208157929
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.5}",0.7176618259321205,0.5296719147482999
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 0.7}",0.9638420770855123,0.7535100961074201
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 0.7}",0.8692011761975571,0.6741262249413004
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 0.7}",0.7468228577087646,0.5681909580307353
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 0.7}",0.7216876272766186,0.5466396573152159
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 0.7}",0.7221606803746234,0.5325180389793598
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.1, ""rows"": 1.0}",0.9639073028268204,0.7537853945341554
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.3, ""rows"": 1.0}",0.868807102274373,0.6738772555103512
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.5, ""rows"": 1.0}",0.7481172201251138,0.5691631405553543
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 0.7, ""rows"": 1.0}",0.7217127915857531,0.5464472640005784
+Random patches,"{""depth"": 4, ""family"": ""Random patches"", ""features"": 1.0, ""rows"": 1.0}",0.7254224289627814,0.5349188400705351
+Random forest,"{""bootstrap"": true, ""family"": ""Random forest"", ""features"": 1}",0.5353843175291457,0.37566959009205464
+Random forest,"{""bootstrap"": true, ""family"": ""Random forest"", ""features"": 2}",0.4984334127251763,0.3370720618540055
+Random forest,"{""bootstrap"": true, ""family"": ""Random forest"", ""features"": 3}",0.49517062456988165,0.32954407818152487
+Random forest,"{""bootstrap"": true, ""family"": ""Random forest"", ""features"": 8}",0.5126253306434122,0.3380033317506463
+Extra trees,"{""bootstrap"": false, ""family"": ""Extra trees"", ""features"": 1}",0.5387033949829397,0.37715854106912183
+Extra trees,"{""bootstrap"": true, ""family"": ""Extra trees"", ""features"": 1}",0.5534520706009256,0.39119746772504344
+Extra trees,"{""bootstrap"": false, ""family"": ""Extra trees"", ""features"": 2}",0.5023853283374057,0.33900800958494876
+Extra trees,"{""bootstrap"": true, ""family"": ""Extra trees"", ""features"": 2}",0.5157616330342508,0.3529128929425069
+Extra trees,"{""bootstrap"": false, ""family"": ""Extra trees"", ""features"": 3}",0.49318448586996594,0.3278352882751942
+Extra trees,"{""bootstrap"": true, ""family"": ""Extra trees"", ""features"": 3}",0.5059525507759567,0.34080574940245517
+Extra trees,"{""bootstrap"": false, ""family"": ""Extra trees"", ""features"": 8}",0.509619184446333,0.3355731567021968
+Extra trees,"{""bootstrap"": true, ""family"": ""Extra trees"", ""features"": 8}",0.5188648060588983,0.3460423666828169

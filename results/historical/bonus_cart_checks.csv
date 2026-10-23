@@ -1,0 +1,13 @@
+criterion,case,passed
+gini,unique split,True
+gini,XOR,True
+gini,constant features,True
+gini,conflicting duplicates,True
+gini,leaf limit,True
+gini,pure class and refit reset,True
+entropy,unique split,True
+entropy,XOR,True
+entropy,constant features,True
+entropy,conflicting duplicates,True
+entropy,leaf limit,True
+entropy,pure class and refit reset,True

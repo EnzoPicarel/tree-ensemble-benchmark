@@ -1,0 +1,5 @@
+method,deep_rows,deep_features,deep_accuracy,shallow_rows,shallow_features,shallow_accuracy,single_deep_accuracy,single_shallow_accuracy,deep_gain_over_single,shallow_gain_over_single
+Pasting,0.7,1.0,0.85,0.1,1.0,0.7346,0.76,0.6366,0.08999999999999997,0.09799999999999998
+Bagging,0.7,1.0,0.8494,0.1,1.0,0.7332,0.76,0.6366,0.08940000000000003,0.09659999999999991
+Random subspaces,1.0,0.3,0.865,1.0,0.1,0.7392,0.76,0.6366,0.10499999999999998,0.10259999999999991
+Random patches,1.0,0.1,0.8562,0.5,0.1,0.7434,0.76,0.6366,0.09619999999999995,0.1067999999999999

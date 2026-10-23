@@ -1,0 +1,14 @@
+{
+  "status": "historical aggregates independently recalculated; training not rerun",
+  "classification_accuracy_pct_mean": 86.62,
+  "classification_accuracy_pct_std": 0.09246621004453777,
+  "housing_stacking_rmse": 0.47110034606761086,
+  "housing_boosting_rmse": 0.4724915630402032,
+  "housing_rmse_reduction_pct": 0.294442712085832,
+  "housing_fit_cost_ratio": 13.333112458909897,
+  "housing_inference_cost_ratio": 15.586668669052315,
+  "cart_configurations": 90,
+  "cart_fixtures": 12,
+  "cart_agreement_min": 0.975,
+  "cart_agreement_max": 1.0
+}

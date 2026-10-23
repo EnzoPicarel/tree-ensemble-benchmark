@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
+<rect width="760" height="300" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#172554">
+<text x="28" y="36" font-size="21">California Housing: small error gain, larger cost</text>
+<text x="28" y="68" font-size="16">Stacking reduces recorded RMSE by 0.29%</text>
+<text x="28" y="98" font-size="13">Cost relative to gradient boosting (1x); historical machine-specific timings</text>
+<text x="28" y="148" font-size="15">Training</text>
+<rect x="130" y="130" width="373.33" height="28" fill="#2563eb"/>
+<text x="513.33" y="149" font-size="15">13.3x</text>
+<text x="28" y="213" font-size="15">Inference</text>
+<rect x="130" y="195" width="436.43" height="28" fill="#2563eb"/>
+<text x="576.43" y="214" font-size="15">15.6x</text>
+<text x="28" y="275" font-size="12">Five estimator seeds on fixed partitions; not independent dataset draws.</text>
+</g></svg>

@@ -1,0 +1,15 @@
+{
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "synthetic": true,
+  "configurations": 90,
+  "status": "complete",
+  "independent_rerun": true
+}

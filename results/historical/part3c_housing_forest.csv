@@ -1,0 +1,2 @@
+family,criterion,max_features,seed,bootstrap,fit_seconds,predict_ms_per_1k,rmse,mae,total_nodes,mean_depth
+Random forest,squared_error,1.0,42,True,3.1471760799995536,63.33633502899547,0.5126253306434121,0.33800333175064634,4530954,31.863333333333333

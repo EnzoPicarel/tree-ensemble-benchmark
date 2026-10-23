@@ -1,0 +1,3 @@
+dataset,features,train,validation,test
+Fashion-MNIST,784,10000,5000,10000
+California Housing,8,12384,4128,4128

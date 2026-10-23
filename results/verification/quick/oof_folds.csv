@@ -1,0 +1,41 @@
+task,seed,method,fold,training_rows,heldout_rows,fit_seconds
+classification,42,Tree,0,115,29,0.0017275510003855743
+classification,42,Tree,1,115,29,0.0014232300000003306
+classification,42,Tree,2,115,29,0.001961923000180832
+classification,42,Tree,3,115,29,0.0016145760000654263
+classification,42,Tree,4,116,28,0.0016272130001198093
+classification,42,Random forest,0,115,29,0.018277592999766057
+classification,42,Random forest,1,115,29,0.020134750000124768
+classification,42,Random forest,2,115,29,0.0182274190001408
+classification,42,Random forest,3,115,29,0.020927298000060546
+classification,42,Random forest,4,116,28,0.01932120700030282
+classification,42,AdaBoost,0,115,29,0.023553405000257044
+classification,42,AdaBoost,1,115,29,0.025875077999899077
+classification,42,AdaBoost,2,115,29,0.025309217000085482
+classification,42,AdaBoost,3,115,29,0.02428729600023871
+classification,42,AdaBoost,4,116,28,0.022029200999895693
+classification,42,Gradient boosting,0,115,29,0.016390274000059435
+classification,42,Gradient boosting,1,115,29,0.013323017999937292
+classification,42,Gradient boosting,2,115,29,0.014235379999718134
+classification,42,Gradient boosting,3,115,29,0.012475744999846938
+classification,42,Gradient boosting,4,116,28,0.012386579999656533
+regression,42,Tree,0,115,29,0.0009278480001739808
+regression,42,Tree,1,115,29,0.0008130609999170701
+regression,42,Tree,2,115,29,0.0009273599998778081
+regression,42,Tree,3,115,29,0.0008076160002019606
+regression,42,Tree,4,116,28,0.001137252999797056
+regression,42,Random forest,0,115,29,0.011154251999869302
+regression,42,Random forest,1,115,29,0.011241171000165195
+regression,42,Random forest,2,115,29,0.012678551999670162
+regression,42,Random forest,3,115,29,0.013580756000010297
+regression,42,Random forest,4,116,28,0.012513654000031238
+regression,42,AdaBoost,0,115,29,0.017169775000184018
+regression,42,AdaBoost,1,115,29,0.02037663100009013
+regression,42,AdaBoost,2,115,29,0.016153328999735095
+regression,42,AdaBoost,3,115,29,0.016591656999935367
+regression,42,AdaBoost,4,116,28,0.015574657000342995
+regression,42,Gradient boosting,0,115,29,0.008650659000068117
+regression,42,Gradient boosting,1,115,29,0.008281800000077055
+regression,42,Gradient boosting,2,115,29,0.008192285999939486
+regression,42,Gradient boosting,3,115,29,0.007775316999868664
+regression,42,Gradient boosting,4,116,28,0.009350638999876537

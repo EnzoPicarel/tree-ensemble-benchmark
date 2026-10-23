@@ -1,0 +1,63 @@
+{
+  "mode": "full",
+  "status": "complete",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "seeds": [
+    42
+  ],
+  "tasks": [
+    "regression"
+  ],
+  "fold_seed": 42,
+  "folds": 5,
+  "threads": 1,
+  "synthetic": false,
+  "data": {
+    "regression": {
+      "development_sha256": "1f517f29148319f9457c3038d0ba55e92f98865602aada8bcb291206911135a8",
+      "test_sha256": "e5849dff28644d67178d0efcfbb43de02eb43e2b6a28907327c2f93ffab512a6",
+      "rows": {
+        "train": 12384,
+        "validation": 4128,
+        "test": 4128
+      }
+    }
+  },
+  "model_settings": {
+    "regression/42": {
+      "Tree (squared_error)": "DecisionTreeRegressor(max_depth=10, random_state=42)",
+      "Tree (absolute_error)": "DecisionTreeRegressor(criterion='absolute_error', max_depth=10, random_state=42)",
+      "Tree (friedman_mse)": "DecisionTreeRegressor(max_depth=10, random_state=42)",
+      "Pasting": "BaggingRegressor(bootstrap=False,\n                 estimator=DecisionTreeRegressor(random_state=42),\n                 max_samples=0.7, n_estimators=100, n_jobs=1, random_state=42)",
+      "Bagging": "BaggingRegressor(estimator=DecisionTreeRegressor(random_state=42),\n                 max_samples=1.0, n_estimators=100, n_jobs=1, random_state=42)",
+      "Random subspaces": "BaggingRegressor(bootstrap=False,\n                 estimator=DecisionTreeRegressor(random_state=42),\n                 max_features=0.7, max_samples=1.0, n_estimators=100, n_jobs=1,\n                 random_state=42)",
+      "Random patches": "BaggingRegressor(estimator=DecisionTreeRegressor(random_state=42),\n                 max_features=0.7, max_samples=1.0, n_estimators=100, n_jobs=1,\n                 random_state=42)",
+      "Random forest": "RandomForestRegressor(max_features=3, n_estimators=300, n_jobs=1,\n                      random_state=42)",
+      "Extra trees": "ExtraTreesRegressor(max_features=3, n_estimators=300, n_jobs=1, random_state=42)",
+      "AdaBoost.R2": "AdaBoostRegressor(estimator=DecisionTreeRegressor(max_depth=6, random_state=42),\n                  learning_rate=0.1, n_estimators=300, random_state=42)",
+      "Gradient boosting": "GradientBoostingRegressor(max_depth=5, n_estimators=286, random_state=42)"
+    }
+  },
+  "timing": "Sequential single-thread fits; prediction includes feature validation; combination latency is additive.",
+  "source_sha256": {
+    "data.py": "4a460f92ef09d91f6b0e9d7344b7147a2cee4192f7ee3bde6c05d21ebbfe2b5a",
+    "__init__.py": "d89a90492ce594633cc3667ed32cc3f93049b17932cd45e8252966cfbe544232",
+    "stacking.py": "cf35b5fda4dc34da0d855eda4214bed4201a2e6a2055e836ebbc807e7558fa49",
+    "cart_study.py": "de067ef84ce1bf10234e880ca724aa557c610bb1a5b3b2c7ab37511a69f6f046",
+    "evaluation.py": "fa79be1654dedbf364f94fddaef0a45270c0013d34ae8c20ae8acc7989e66d3b",
+    "cart.py": "aa4770465a31ef37270e41e77630db07ec3f4cb80e93b5d64f7a695c9b85cc7b",
+    "cli.py": "6aba690721ba4fcdca85e1c4d97c00c06d7c6eb5fd8d08fd6fc3db621e04282a",
+    "experiments.py": "aac07b866acdd1f993428a30d57b4a92af2a7101c5875ecedfed0fcd641afb7b",
+    "models.py": "67917359520098c6c2485bc2bea2fd55bd40a6ba3bc9a163261fc57bf1d5f1db",
+    "reporting.py": "9a4e5c36ac6b0fd9018a3ba245e45561ac11d34ab6871da01bcbedb26250987f"
+  },
+  "frozen_config_sha256": "b6d7287463db1300964018c74888cf70c74ac824a717bbc6163f28e17e061d99"
+}

@@ -1,0 +1,63 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "fold_seed": 42,
+  "training_sizes": {
+    "classification": 10000,
+    "regression": 12384
+  },
+  "data_ids": {
+    "classification": "14599826769dfee9ce4ea66cd06c9a93890302581de1db5a246dbca74c0ac29a",
+    "regression": "1f517f29148319f9457c3038d0ba55e92f98865602aada8bcb291206911135a8"
+  },
+  "combination_members": {
+    "classification": [
+      "Tree (entropy)",
+      "Random forest",
+      "AdaBoost",
+      "Gradient boosting"
+    ],
+    "regression": [
+      "Tree (absolute_error)",
+      "Random forest",
+      "AdaBoost.R2",
+      "Gradient boosting"
+    ]
+  },
+  "models": {
+    "classification": {
+      "Tree (gini)": "DecisionTreeClassifier(max_depth=10)",
+      "Tree (entropy)": "DecisionTreeClassifier(ccp_alpha=0.0020603530423683554, criterion='entropy')",
+      "Pasting": "BaggingClassifier(bootstrap=False, estimator=DecisionTreeClassifier(),\n                  max_samples=0.7, n_estimators=100, n_jobs=1)",
+      "Bagging": "BaggingClassifier(estimator=DecisionTreeClassifier(), max_samples=0.7,\n                  n_estimators=239, n_jobs=1)",
+      "Random subspaces": "BaggingClassifier(bootstrap=False, estimator=DecisionTreeClassifier(),\n                  max_features=0.3, max_samples=1.0, n_estimators=100,\n                  n_jobs=1)",
+      "Random patches": "BaggingClassifier(estimator=DecisionTreeClassifier(), max_features=0.1,\n                  max_samples=1.0, n_estimators=100, n_jobs=1)",
+      "Random forest": "RandomForestClassifier(criterion='entropy', max_features=78, n_estimators=300,\n                       n_jobs=1)",
+      "Extra trees": "ExtraTreesClassifier(criterion='entropy', max_features=78, n_estimators=300,\n                     n_jobs=1)",
+      "AdaBoost": "AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=8),\n                   learning_rate=0.5, n_estimators=490)",
+      "Gradient boosting": "HistGradientBoostingClassifier(early_stopping=False, learning_rate=0.05,\n                               max_depth=6, max_iter=126, max_leaf_nodes=None)"
+    },
+    "regression": {
+      "Tree (squared_error)": "DecisionTreeRegressor(max_depth=10)",
+      "Tree (absolute_error)": "DecisionTreeRegressor(criterion='absolute_error', max_depth=10)",
+      "Tree (friedman_mse)": "DecisionTreeRegressor(max_depth=10)",
+      "Pasting": "BaggingRegressor(bootstrap=False, estimator=DecisionTreeRegressor(),\n                 max_samples=0.7, n_estimators=100, n_jobs=1)",
+      "Bagging": "BaggingRegressor(estimator=DecisionTreeRegressor(), max_samples=1.0,\n                 n_estimators=100, n_jobs=1)",
+      "Random subspaces": "BaggingRegressor(bootstrap=False, estimator=DecisionTreeRegressor(),\n                 max_features=0.7, max_samples=1.0, n_estimators=100, n_jobs=1)",
+      "Random patches": "BaggingRegressor(estimator=DecisionTreeRegressor(), max_features=0.7,\n                 max_samples=1.0, n_estimators=100, n_jobs=1)",
+      "Random forest": "RandomForestRegressor(max_features=3, n_estimators=300, n_jobs=1)",
+      "Extra trees": "ExtraTreesRegressor(max_features=3, n_estimators=300, n_jobs=1)",
+      "AdaBoost.R2": "AdaBoostRegressor(estimator=DecisionTreeRegressor(max_depth=6),\n                  learning_rate=0.1, n_estimators=300)",
+      "Gradient boosting": "GradientBoostingRegressor(max_depth=5, n_estimators=286)"
+    }
+  },
+  "meta_models": {
+    "classification": "LogisticRegression(C=1, max_iter=2000, tol=1e-6)",
+    "regression": "Ridge(alpha=1)"
+  }
+}

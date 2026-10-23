@@ -1,0 +1,9 @@
+# Versions used for the recorded notebook experiments.
+numpy==2.5.4
+pandas==3.0.6
+matplotlib==3.11.2
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+jupyterlab==4.6.4
+ipykernel==7.4.0

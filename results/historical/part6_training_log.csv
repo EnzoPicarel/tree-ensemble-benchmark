@@ -1,0 +1,306 @@
+task,method,seed,fold,fit_seconds,nodes
+classification,AdaBoost,42,,1242.5652971710006,184636.0
+classification,AdaBoost,123,,1242.9916624399993,184468.0
+classification,AdaBoost,2026,,1237.948452644001,183696.0
+classification,AdaBoost,7,,1239.460799460001,184602.0
+classification,AdaBoost,99,,1242.14563938,184790.0
+classification,AdaBoost,42,0.0,906.5238645890004,
+classification,AdaBoost,42,1.0,910.0024917640003,
+classification,AdaBoost,42,2.0,913.3827067759994,
+classification,AdaBoost,42,3.0,905.5145740190001,
+classification,AdaBoost,42,4.0,900.2765091829988,
+classification,AdaBoost,123,0.0,993.2545264929995,179630.0
+classification,AdaBoost,123,1.0,998.6616448410005,178580.0
+classification,AdaBoost,123,2.0,994.3814843260006,178150.0
+classification,AdaBoost,123,3.0,991.7157190329999,176488.0
+classification,AdaBoost,123,4.0,991.8737322880006,178202.0
+classification,AdaBoost,2026,0.0,998.279480479001,179456.0
+classification,AdaBoost,2026,1.0,999.3351483789993,179360.0
+classification,AdaBoost,2026,2.0,996.968167391,178714.0
+classification,AdaBoost,2026,3.0,994.9719235770008,177052.0
+classification,AdaBoost,2026,4.0,991.2017583699999,178052.0
+classification,AdaBoost,7,0.0,996.9432359279999,179428.0
+classification,AdaBoost,7,1.0,973.9428766780002,178592.0
+classification,AdaBoost,7,2.0,981.6612670680006,179096.0
+classification,AdaBoost,7,3.0,979.8488383229997,176830.0
+classification,AdaBoost,7,4.0,972.1749174239994,178366.0
+classification,AdaBoost,99,0.0,978.0104859839994,178512.0
+classification,AdaBoost,99,1.0,976.5544387110003,178742.0
+classification,AdaBoost,99,2.0,980.9904558300004,178916.0
+classification,AdaBoost,99,3.0,976.9702475820013,177662.0
+classification,AdaBoost,99,4.0,972.6284588840008,178212.0
+classification,Tree (gini),42,,3.014199371998984,657.0
+classification,Tree (gini),123,,2.8694439219998458,653.0
+classification,Tree (gini),2026,,2.950627799000358,653.0
+classification,Tree (gini),7,,2.8908411169995816,655.0
+classification,Tree (gini),99,,2.983501057999092,655.0
+classification,Tree (entropy),42,,4.870464769999671,279.0
+classification,Tree (entropy),123,,4.710182306998831,279.0
+classification,Tree (entropy),2026,,4.58462463000069,277.0
+classification,Tree (entropy),7,,4.734636744000454,279.0
+classification,Tree (entropy),99,,5.2886433959993155,279.0
+classification,Pasting,42,,303.3143946330001,151198.0
+classification,Pasting,123,,302.6767396359992,150634.0
+classification,Pasting,2026,,306.1360949629998,150442.0
+classification,Pasting,7,,302.17159854000056,149940.0
+classification,Pasting,99,,304.3312701849991,150948.0
+classification,Bagging,42,,504.6477258219984,285527.0
+classification,Bagging,123,,504.61137639499975,284317.0
+classification,Bagging,2026,,508.25038510500053,284947.0
+classification,Bagging,7,,505.5939695629986,285351.0
+classification,Bagging,99,,565.5696486319994,284589.0
+classification,Random subspaces,42,,139.26947161299904,230754.0
+classification,Random subspaces,123,,143.92559432899907,231202.0
+classification,Random subspaces,2026,,140.35241708300055,231700.0
+classification,Random subspaces,7,,141.42773056500118,231598.0
+classification,Random subspaces,99,,142.7456548329992,232056.0
+classification,Random patches,42,,26.932400357000006,195756.0
+classification,Random patches,123,,27.197311077999984,195300.0
+classification,Random patches,2026,,27.208919998000056,195074.0
+classification,Random patches,7,,27.13888583299922,195272.0
+classification,Random patches,99,,27.55039637399932,195712.0
+classification,Random forest,42,,97.58281873099986,466940.0
+classification,Random forest,123,,97.14917042399975,467094.0
+classification,Random forest,2026,,95.98741049599994,467146.0
+classification,Random forest,7,,96.83436577099928,466680.0
+classification,Random forest,99,,98.07656044599935,466048.0
+classification,Extra trees,42,,37.806961117001265,1023096.0
+classification,Extra trees,123,,42.17830154500007,1024624.0
+classification,Extra trees,2026,,42.91356605300098,1023850.0
+classification,Extra trees,7,,43.570368676000726,1025082.0
+classification,Extra trees,99,,42.78961281900047,1022658.0
+classification,Gradient boosting,42,,220.20574883500012,94220.0
+classification,Gradient boosting,123,,225.9041794120003,94220.0
+classification,Gradient boosting,2026,,251.1618697190006,94220.0
+classification,Gradient boosting,7,,242.5577406809989,94220.0
+classification,Gradient boosting,99,,258.6650575069998,94220.0
+regression,Tree (squared_error),42,,0.0955484800015256,1471.0
+regression,Tree (squared_error),123,,0.09362835600040853,1471.0
+regression,Tree (squared_error),2026,,0.08335154999986116,1471.0
+regression,Tree (squared_error),7,,0.08093247400029213,1471.0
+regression,Tree (squared_error),99,,0.09004107399960048,1471.0
+regression,Tree (absolute_error),42,,0.3165275030005432,1373.0
+regression,Tree (absolute_error),123,,0.3081732459995692,1373.0
+regression,Tree (absolute_error),2026,,0.3119585589993221,1373.0
+regression,Tree (absolute_error),7,,0.3086671800010663,1373.0
+regression,Tree (absolute_error),99,,0.31441315700067207,1373.0
+regression,Tree (friedman_mse),42,,0.08752364400061197,1471.0
+regression,Tree (friedman_mse),123,,0.08164493299955211,1471.0
+regression,Tree (friedman_mse),2026,,0.08858088399938424,1471.0
+regression,Tree (friedman_mse),7,,0.08905738900102733,1471.0
+regression,Tree (friedman_mse),99,,0.08449221800037776,1471.0
+regression,Pasting,42,,8.005168247000256,1667864.0
+regression,Pasting,123,,7.925249101999725,1667312.0
+regression,Pasting,2026,,8.069390463999298,1667282.0
+regression,Pasting,7,,8.159767729001032,1667744.0
+regression,Pasting,99,,8.110522513999967,1667822.0
+regression,Bagging,42,,7.682990135999717,1510990.0
+regression,Bagging,123,,7.806067883999276,1508904.0
+regression,Bagging,2026,,7.495019849000528,1511020.0
+regression,Bagging,7,,7.692575388999103,1509758.0
+regression,Bagging,99,,7.254318364999563,1510510.0
+regression,Random subspaces,42,,8.512417948000802,2395036.0
+regression,Random subspaces,123,,8.019408498999837,2395850.0
+regression,Random subspaces,2026,,8.060133048998978,2394836.0
+regression,Random subspaces,7,,8.648438569998689,2394662.0
+regression,Random subspaces,99,,7.960748745999808,2395484.0
+regression,Random patches,42,,5.127063846000965,1519256.0
+regression,Random patches,123,,5.1133216219986934,1518284.0
+regression,Random patches,2026,,5.333847459998651,1519768.0
+regression,Random patches,7,,5.3369875740008865,1518342.0
+regression,Random patches,99,,5.497734233998926,1519936.0
+regression,Random forest,42,,10.058375386999614,4556388.0
+regression,Random forest,123,,10.435238161000598,4553546.0
+regression,Random forest,2026,,10.089376866999373,4556272.0
+regression,Random forest,7,,9.97312681099902,4555938.0
+regression,Random forest,99,,10.280960350000896,4556376.0
+regression,Extra trees,42,,5.4733312070002285,7281308.0
+regression,Extra trees,123,,5.369309900999724,7281164.0
+regression,Extra trees,2026,,5.216929550999339,7280658.0
+regression,Extra trees,7,,5.408603753001444,7281206.0
+regression,Extra trees,99,,5.313745248000487,7280846.0
+regression,AdaBoost.R2,42,,11.8503982860002,35330.0
+regression,AdaBoost.R2,123,,11.787389246999737,35308.0
+regression,AdaBoost.R2,2026,,11.977241197000694,35198.0
+regression,AdaBoost.R2,7,,13.018953620001412,35446.0
+regression,AdaBoost.R2,99,,13.077097739998862,35172.0
+regression,Gradient boosting,42,,13.004426389999935,16122.0
+regression,Gradient boosting,123,,12.242135066999253,16122.0
+regression,Gradient boosting,2026,,12.491308210999705,16122.0
+regression,Gradient boosting,7,,13.42548024700045,16122.0
+regression,Gradient boosting,99,,12.997111864000544,16122.0
+classification,Tree (entropy),42,0.0,3.3285483489999024,
+classification,Tree (entropy),42,1.0,3.3714483019994077,
+classification,Tree (entropy),42,2.0,3.2279966690002766,
+classification,Tree (entropy),42,3.0,3.3598594039995078,
+classification,Tree (entropy),42,4.0,3.2898125800002163,
+classification,Tree (entropy),123,0.0,3.9310695320000377,293.0
+classification,Tree (entropy),123,1.0,4.007778903000144,313.0
+classification,Tree (entropy),123,2.0,4.329507930999171,305.0
+classification,Tree (entropy),123,3.0,4.502530777999709,309.0
+classification,Tree (entropy),123,4.0,4.2779643180001585,307.0
+classification,Tree (entropy),2026,0.0,4.459880944999895,293.0
+classification,Tree (entropy),2026,1.0,4.314929089001453,313.0
+classification,Tree (entropy),2026,2.0,3.941087436998714,303.0
+classification,Tree (entropy),2026,3.0,4.373751735000042,309.0
+classification,Tree (entropy),2026,4.0,3.8816358639996906,307.0
+classification,Tree (entropy),7,0.0,3.9434441339999466,293.0
+classification,Tree (entropy),7,1.0,3.9115855479994934,313.0
+classification,Tree (entropy),7,2.0,3.8198949320012616,303.0
+classification,Tree (entropy),7,3.0,3.8789706560000923,309.0
+classification,Tree (entropy),7,4.0,3.8273475549995055,307.0
+classification,Tree (entropy),99,0.0,3.8907358569995267,293.0
+classification,Tree (entropy),99,1.0,4.039256727000975,313.0
+classification,Tree (entropy),99,2.0,3.9447375740001007,303.0
+classification,Tree (entropy),99,3.0,3.903785702999812,309.0
+classification,Tree (entropy),99,4.0,3.8741459570010193,307.0
+classification,Random forest,42,0.0,70.12017907299924,
+classification,Random forest,42,1.0,70.58165087499947,
+classification,Random forest,42,2.0,70.35459417899983,
+classification,Random forest,42,3.0,70.06729595900106,
+classification,Random forest,42,4.0,70.76339214400105,
+classification,Random forest,123,0.0,229.41713649100166,383462.0
+classification,Random forest,123,1.0,228.6455754590006,386020.0
+classification,Random forest,123,2.0,228.30765434300156,383746.0
+classification,Random forest,123,3.0,229.27219208300085,383964.0
+classification,Random forest,123,4.0,227.74011558799975,385524.0
+classification,Random forest,2026,0.0,228.91897795399927,383292.0
+classification,Random forest,2026,1.0,229.00413534899963,386298.0
+classification,Random forest,2026,2.0,230.75881470299828,383830.0
+classification,Random forest,2026,3.0,227.9407071630012,383796.0
+classification,Random forest,2026,4.0,227.00488099500035,385004.0
+classification,Random forest,7,0.0,172.33222942800057,384812.0
+classification,Random forest,7,1.0,131.550823526999,386782.0
+classification,Random forest,7,2.0,121.88383972699921,384932.0
+classification,Random forest,7,3.0,105.7026989749993,384628.0
+classification,Random forest,7,4.0,100.91062534199955,385954.0
+classification,Random forest,99,0.0,93.07018297800096,384166.0
+classification,Random forest,99,1.0,83.63762668400159,386072.0
+classification,Random forest,99,2.0,82.66476070499994,385412.0
+classification,Random forest,99,3.0,82.65472982699976,384006.0
+classification,Random forest,99,4.0,81.85653959100091,385438.0
+classification,Gradient boosting,42,0.0,108.16488582100101,
+classification,Gradient boosting,42,1.0,111.66278165800031,
+classification,Gradient boosting,42,2.0,113.51997169300012,
+classification,Gradient boosting,42,3.0,111.73954647000028,
+classification,Gradient boosting,42,4.0,112.46344386400051,
+classification,Gradient boosting,123,0.0,148.38172695100002,90766.0
+classification,Gradient boosting,123,1.0,151.80526990600083,91326.0
+classification,Gradient boosting,123,2.0,154.7663932960004,89524.0
+classification,Gradient boosting,123,3.0,155.72786511199956,90342.0
+classification,Gradient boosting,123,4.0,144.73634832599964,90450.0
+classification,Gradient boosting,2026,0.0,152.90368567400037,90766.0
+classification,Gradient boosting,2026,1.0,167.8790243679996,91326.0
+classification,Gradient boosting,2026,2.0,172.98059493499932,89524.0
+classification,Gradient boosting,2026,3.0,175.30764459400052,90342.0
+classification,Gradient boosting,2026,4.0,180.16863765000016,90450.0
+classification,Gradient boosting,7,0.0,180.43811352400007,90766.0
+classification,Gradient boosting,7,1.0,180.85254838600122,91326.0
+classification,Gradient boosting,7,2.0,169.2858214810003,89524.0
+classification,Gradient boosting,7,3.0,175.4792133709998,90342.0
+classification,Gradient boosting,7,4.0,175.84463131600023,90450.0
+classification,Gradient boosting,99,0.0,169.72666831599963,90766.0
+classification,Gradient boosting,99,1.0,141.71999727299954,91326.0
+classification,Gradient boosting,99,2.0,139.59144288300013,89524.0
+classification,Gradient boosting,99,3.0,134.05890720199932,90342.0
+classification,Gradient boosting,99,4.0,135.44644608599992,90450.0
+regression,Tree (absolute_error),42,0.0,0.2452111460006563,1263.0
+regression,Tree (absolute_error),42,1.0,0.24849111499861465,1331.0
+regression,Tree (absolute_error),42,2.0,0.2674833649998618,1367.0
+regression,Tree (absolute_error),42,3.0,0.2638824730001943,1323.0
+regression,Tree (absolute_error),42,4.0,0.2749662059995899,1361.0
+regression,Tree (absolute_error),123,0.0,0.25471892799942,1263.0
+regression,Tree (absolute_error),123,1.0,0.2620847300004243,1331.0
+regression,Tree (absolute_error),123,2.0,0.24761207400115381,1367.0
+regression,Tree (absolute_error),123,3.0,0.2493703509990155,1321.0
+regression,Tree (absolute_error),123,4.0,0.2555521880003653,1361.0
+regression,Tree (absolute_error),2026,0.0,0.281064280999999,1263.0
+regression,Tree (absolute_error),2026,1.0,0.25063232600041374,1331.0
+regression,Tree (absolute_error),2026,2.0,0.2567465510001057,1367.0
+regression,Tree (absolute_error),2026,3.0,0.2525469020001765,1319.0
+regression,Tree (absolute_error),2026,4.0,0.2539396249994752,1361.0
+regression,Tree (absolute_error),7,0.0,0.25802853999994113,1281.0
+regression,Tree (absolute_error),7,1.0,0.27796807100094156,1331.0
+regression,Tree (absolute_error),7,2.0,0.256877114999952,1367.0
+regression,Tree (absolute_error),7,3.0,0.4817643419992237,1325.0
+regression,Tree (absolute_error),7,4.0,0.28498189600031765,1361.0
+regression,Tree (absolute_error),99,0.0,0.258301379999466,1263.0
+regression,Tree (absolute_error),99,1.0,0.3235088299989002,1331.0
+regression,Tree (absolute_error),99,2.0,0.2937578069995652,1367.0
+regression,Tree (absolute_error),99,3.0,0.32553584500055877,1321.0
+regression,Tree (absolute_error),99,4.0,0.2532798259999254,1361.0
+regression,Random forest,42,0.0,7.938652118000391,3648732.0
+regression,Random forest,42,1.0,8.34786737200011,3643650.0
+regression,Random forest,42,2.0,7.756902658999024,3648804.0
+regression,Random forest,42,3.0,7.8576435779996245,3644960.0
+regression,Random forest,42,4.0,7.9926801010005875,3644664.0
+regression,Random forest,123,0.0,7.992041012001209,3647996.0
+regression,Random forest,123,1.0,8.003105869998763,3642666.0
+regression,Random forest,123,2.0,7.923068999998577,3648586.0
+regression,Random forest,123,3.0,7.770690354998806,3643650.0
+regression,Random forest,123,4.0,7.841966182999386,3643934.0
+regression,Random forest,2026,0.0,7.967993865000608,3649334.0
+regression,Random forest,2026,1.0,8.759177302999888,3643870.0
+regression,Random forest,2026,2.0,7.968726462999257,3650058.0
+regression,Random forest,2026,3.0,7.630229201000475,3644798.0
+regression,Random forest,2026,4.0,7.911596950998501,3644916.0
+regression,Random forest,7,0.0,7.8731289229999675,3648332.0
+regression,Random forest,7,1.0,8.338374426999508,3643948.0
+regression,Random forest,7,2.0,7.897900636000486,3648724.0
+regression,Random forest,7,3.0,7.7347430610006995,3645028.0
+regression,Random forest,7,4.0,7.52705690699986,3644308.0
+regression,Random forest,99,0.0,7.240374916998917,3648820.0
+regression,Random forest,99,1.0,7.354493884999101,3643570.0
+regression,Random forest,99,2.0,7.5554274290007015,3648932.0
+regression,Random forest,99,3.0,7.666085603001193,3643962.0
+regression,Random forest,99,4.0,7.470752438999625,3644870.0
+regression,AdaBoost.R2,42,0.0,9.366683188000025,34746.0
+regression,AdaBoost.R2,42,1.0,9.695242664000034,34788.0
+regression,AdaBoost.R2,42,2.0,9.419641004000368,35206.0
+regression,AdaBoost.R2,42,3.0,9.334668502000568,35532.0
+regression,AdaBoost.R2,42,4.0,9.482022218000566,35330.0
+regression,AdaBoost.R2,123,0.0,9.184678660998543,35068.0
+regression,AdaBoost.R2,123,1.0,9.381341768999846,34926.0
+regression,AdaBoost.R2,123,2.0,9.558384488000229,35422.0
+regression,AdaBoost.R2,123,3.0,9.242123245001494,35390.0
+regression,AdaBoost.R2,123,4.0,9.226893885001118,35192.0
+regression,AdaBoost.R2,2026,0.0,9.14553602900014,35008.0
+regression,AdaBoost.R2,2026,1.0,9.25396086499859,34954.0
+regression,AdaBoost.R2,2026,2.0,9.532169187999898,35402.0
+regression,AdaBoost.R2,2026,3.0,9.227468405999389,35676.0
+regression,AdaBoost.R2,2026,4.0,9.208385825999358,35218.0
+regression,AdaBoost.R2,7,0.0,9.183834375000515,35050.0
+regression,AdaBoost.R2,7,1.0,9.393108542999471,34900.0
+regression,AdaBoost.R2,7,2.0,9.237467757999184,35470.0
+regression,AdaBoost.R2,7,3.0,9.33536972299953,35394.0
+regression,AdaBoost.R2,7,4.0,9.348789613000918,35474.0
+regression,AdaBoost.R2,99,0.0,9.375992388000668,35010.0
+regression,AdaBoost.R2,99,1.0,9.328849444000298,34934.0
+regression,AdaBoost.R2,99,2.0,9.33147621399985,35316.0
+regression,AdaBoost.R2,99,3.0,9.134357974000523,35512.0
+regression,AdaBoost.R2,99,4.0,9.049577154999497,35078.0
+regression,Gradient boosting,42,0.0,9.661686888999611,15970.0
+regression,Gradient boosting,42,1.0,9.751847303999966,15916.0
+regression,Gradient boosting,42,2.0,9.571454681999967,16218.0
+regression,Gradient boosting,42,3.0,9.857329968999693,16114.0
+regression,Gradient boosting,42,4.0,10.245653990999926,16046.0
+regression,Gradient boosting,123,0.0,9.438936790000298,15970.0
+regression,Gradient boosting,123,1.0,9.940383508001105,15916.0
+regression,Gradient boosting,123,2.0,10.044117208000898,16218.0
+regression,Gradient boosting,123,3.0,9.495271616999162,16114.0
+regression,Gradient boosting,123,4.0,9.69030914799987,16046.0
+regression,Gradient boosting,2026,0.0,9.766992483999275,15970.0
+regression,Gradient boosting,2026,1.0,9.438769754999157,15916.0
+regression,Gradient boosting,2026,2.0,9.50043537000056,16218.0
+regression,Gradient boosting,2026,3.0,10.013433446998533,16114.0
+regression,Gradient boosting,2026,4.0,10.161772089000806,16046.0
+regression,Gradient boosting,7,0.0,9.94666891199995,15970.0
+regression,Gradient boosting,7,1.0,9.795354154999586,15916.0
+regression,Gradient boosting,7,2.0,10.062485922999258,16218.0
+regression,Gradient boosting,7,3.0,9.536142241000562,16114.0
+regression,Gradient boosting,7,4.0,9.443892448000042,16046.0
+regression,Gradient boosting,99,0.0,9.390588236999974,15970.0
+regression,Gradient boosting,99,1.0,9.536454778999541,15916.0
+regression,Gradient boosting,99,2.0,8.951141408000694,16218.0
+regression,Gradient boosting,99,3.0,9.127758292999715,16114.0
+regression,Gradient boosting,99,4.0,8.578498340999431,16046.0

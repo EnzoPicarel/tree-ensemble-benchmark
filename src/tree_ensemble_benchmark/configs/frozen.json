@@ -1,0 +1,247 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "fold_seed": 42,
+  "members": {
+    "classification": [
+      "Tree (entropy)",
+      "Random forest",
+      "AdaBoost",
+      "Gradient boosting"
+    ],
+    "regression": [
+      "Tree (absolute_error)",
+      "Random forest",
+      "AdaBoost.R2",
+      "Gradient boosting"
+    ]
+  },
+  "models": {
+    "classification": {
+      "Tree (gini)": {
+        "estimator": "DecisionTreeClassifier",
+        "params": {
+          "max_depth": 10
+        }
+      },
+      "Tree (entropy)": {
+        "estimator": "DecisionTreeClassifier",
+        "params": {
+          "ccp_alpha": 0.0020603530423683554,
+          "criterion": "entropy"
+        }
+      },
+      "Pasting": {
+        "estimator": "BaggingClassifier",
+        "params": {
+          "bootstrap": false,
+          "estimator": {
+            "estimator": "DecisionTreeClassifier",
+            "params": {}
+          },
+          "max_samples": 0.7,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Bagging": {
+        "estimator": "BaggingClassifier",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeClassifier",
+            "params": {}
+          },
+          "max_samples": 0.7,
+          "n_estimators": 239,
+          "n_jobs": 1
+        }
+      },
+      "Random subspaces": {
+        "estimator": "BaggingClassifier",
+        "params": {
+          "bootstrap": false,
+          "estimator": {
+            "estimator": "DecisionTreeClassifier",
+            "params": {}
+          },
+          "max_features": 0.3,
+          "max_samples": 1.0,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Random patches": {
+        "estimator": "BaggingClassifier",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeClassifier",
+            "params": {}
+          },
+          "max_features": 0.1,
+          "max_samples": 1.0,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Random forest": {
+        "estimator": "RandomForestClassifier",
+        "params": {
+          "criterion": "entropy",
+          "max_features": 78,
+          "n_estimators": 300,
+          "n_jobs": 1
+        }
+      },
+      "Extra trees": {
+        "estimator": "ExtraTreesClassifier",
+        "params": {
+          "criterion": "entropy",
+          "max_features": 78,
+          "n_estimators": 300,
+          "n_jobs": 1
+        }
+      },
+      "AdaBoost": {
+        "estimator": "AdaBoostClassifier",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeClassifier",
+            "params": {
+              "max_depth": 8
+            }
+          },
+          "learning_rate": 0.5,
+          "n_estimators": 490
+        }
+      },
+      "Gradient boosting": {
+        "estimator": "HistGradientBoostingClassifier",
+        "params": {
+          "early_stopping": false,
+          "learning_rate": 0.05,
+          "max_depth": 6,
+          "max_iter": 126,
+          "max_leaf_nodes": null
+        }
+      }
+    },
+    "regression": {
+      "Tree (squared_error)": {
+        "estimator": "DecisionTreeRegressor",
+        "params": {
+          "max_depth": 10
+        }
+      },
+      "Tree (absolute_error)": {
+        "estimator": "DecisionTreeRegressor",
+        "params": {
+          "criterion": "absolute_error",
+          "max_depth": 10
+        }
+      },
+      "Tree (friedman_mse)": {
+        "estimator": "DecisionTreeRegressor",
+        "params": {
+          "max_depth": 10
+        }
+      },
+      "Pasting": {
+        "estimator": "BaggingRegressor",
+        "params": {
+          "bootstrap": false,
+          "estimator": {
+            "estimator": "DecisionTreeRegressor",
+            "params": {}
+          },
+          "max_samples": 0.7,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Bagging": {
+        "estimator": "BaggingRegressor",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeRegressor",
+            "params": {}
+          },
+          "max_samples": 1.0,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Random subspaces": {
+        "estimator": "BaggingRegressor",
+        "params": {
+          "bootstrap": false,
+          "estimator": {
+            "estimator": "DecisionTreeRegressor",
+            "params": {}
+          },
+          "max_features": 0.7,
+          "max_samples": 1.0,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Random patches": {
+        "estimator": "BaggingRegressor",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeRegressor",
+            "params": {}
+          },
+          "max_features": 0.7,
+          "max_samples": 1.0,
+          "n_estimators": 100,
+          "n_jobs": 1
+        }
+      },
+      "Random forest": {
+        "estimator": "RandomForestRegressor",
+        "params": {
+          "max_features": 3,
+          "n_estimators": 300,
+          "n_jobs": 1
+        }
+      },
+      "Extra trees": {
+        "estimator": "ExtraTreesRegressor",
+        "params": {
+          "max_features": 3,
+          "n_estimators": 300,
+          "n_jobs": 1
+        }
+      },
+      "AdaBoost.R2": {
+        "estimator": "AdaBoostRegressor",
+        "params": {
+          "estimator": {
+            "estimator": "DecisionTreeRegressor",
+            "params": {
+              "max_depth": 6
+            }
+          },
+          "learning_rate": 0.1,
+          "n_estimators": 300
+        }
+      },
+      "Gradient boosting": {
+        "estimator": "GradientBoostingRegressor",
+        "params": {
+          "max_depth": 5,
+          "n_estimators": 286
+        }
+      }
+    }
+  },
+  "expected_development_sha256": {
+    "classification": "14599826769dfee9ce4ea66cd06c9a93890302581de1db5a246dbca74c0ac29a",
+    "regression": "1f517f29148319f9457c3038d0ba55e92f98865602aada8bcb291206911135a8"
+  }
+}
